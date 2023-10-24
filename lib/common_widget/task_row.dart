@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_face_pile/flutter_face_pile.dart';
 
 import '../common/color_extenstion.dart';
- 
+
 class TaskRow extends StatelessWidget {
   final Map tObj;
   final int index;
@@ -10,7 +10,6 @@ class TaskRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     var imgArr = tObj["image"] as List? ?? [];
     return Padding(
       padding: const EdgeInsets.all(8.0),
@@ -61,21 +60,15 @@ class TaskRow extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       SizedBox(
-                        width: 25 + ( (imgArr.length - 1) * 25 * 0.6 ) ,
+                        width: 25 + ((imgArr.length - 1) * 25 * 0.6),
                         child: FacePile(
-                          faces: 
-                          
-                          imgArr.map((iObj) {
-
-                            return  FaceHolder(
+                          faces: imgArr.map((iObj) {
+                            return FaceHolder(
                               id: iObj["id"].toString(),
                               name: iObj["name"].toString(),
-                              avatar: NetworkImage(
-                                  iObj["image"].toString()),
+                              avatar: NetworkImage(iObj["image"].toString()),
                             );
-                          } ).toList()
-
-                         ,
+                          }).toList(),
                           faceSize: 25,
                           facePercentOverlap: .3,
                           borderColor: Colors.white,

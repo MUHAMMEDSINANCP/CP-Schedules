@@ -18,7 +18,7 @@ class _HomeViewState extends State<HomeView> {
     {
       "name": "Working\nHours",
       "sub_name": "working hours exceeded by 3 hours",
-      "max_val": 40,
+      "max_val": 30,
       "val": 19,
       "displayType": "val",
     },
@@ -238,7 +238,15 @@ class _HomeViewState extends State<HomeView> {
                           setState(() {
                             selectTab = 0;
                           });
-
+                        },
+                        icon: Icon(
+                          Icons.apps,
+                          size: 25,
+                          color: selectTab == 0 ? Colors.white : Colors.white54,
+                        ),
+                      ),
+                      IconButton(
+                        onPressed: () {
                           showModalBottomSheet(
                               isScrollControlled: true,
                               backgroundColor: Colors.transparent,
@@ -375,15 +383,6 @@ class _HomeViewState extends State<HomeView> {
                                       ]),
                                 );
                               });
-                        },
-                        icon: Icon(
-                          Icons.apps,
-                          size: 25,
-                          color: selectTab == 0 ? Colors.white : Colors.white54,
-                        ),
-                      ),
-                      IconButton(
-                        onPressed: () {
                           setState(() {
                             selectTab = 1;
                           });
@@ -396,6 +395,142 @@ class _HomeViewState extends State<HomeView> {
                       ),
                       IconButton(
                         onPressed: () {
+                          showModalBottomSheet(
+                              isScrollControlled: true,
+                              backgroundColor: Colors.transparent,
+                              context: context,
+                              builder: (context) {
+                                return Container(
+                                  margin: const EdgeInsets.all(25),
+                                  padding: const EdgeInsets.all(20),
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(25),
+                                  ),
+                                  child: Column(
+                                      mainAxisSize: MainAxisSize.min,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            InkWell(
+                                              onTap: () {
+                                                Navigator.pop(context);
+                                              },
+                                              child: Container(
+                                                width: 50,
+                                                height: 50,
+                                                decoration: const BoxDecoration(
+                                                    color: Color(0xffE2E2E5),
+                                                    borderRadius:
+                                                        BorderRadius.all(
+                                                            Radius.circular(
+                                                                10))),
+                                                child: Icon(
+                                                  Icons.close,
+                                                  color: TColor.primary,
+                                                ),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                        Image.asset(
+                                          'assets/img/ coffee.png',
+                                          fit: BoxFit.fitWidth,
+                                          width: 160,
+                                        ),
+                                        const SizedBox(
+                                          height: 15,
+                                        ),
+                                        Text(
+                                          "Oh, you need\nsome rest!",
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                              color: TColor.primary,
+                                              fontSize: 25,
+                                              fontWeight: FontWeight.w700),
+                                        ),
+                                        const SizedBox(
+                                          height: 15,
+                                        ),
+                                        Text(
+                                          "Coffee machine can make\n a cappuccino especially for you in\n5 minutes. Do you want some coffee?",
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                              color: TColor.primary
+                                                  .withOpacity(0.7),
+                                              fontSize: 14,
+                                              fontWeight: FontWeight.w700),
+                                        ),
+                                        const SizedBox(
+                                          height: 50,
+                                        ),
+                                        Row(
+                                          children: [
+                                            Expanded(
+                                              child: InkWell(
+                                                onTap: () {
+                                                  Navigator.pop(context);
+                                                },
+                                                child: Container(
+                                                  height: 50,
+                                                  decoration: BoxDecoration(
+                                                      border: Border.all(
+                                                          color:
+                                                              TColor.primary),
+                                                      borderRadius:
+                                                          const BorderRadius
+                                                              .all(
+                                                              Radius.circular(
+                                                                  10))),
+                                                  child: Center(
+                                                    child: Text(
+                                                      "No, later",
+                                                      style: TextStyle(
+                                                          color: TColor.primary,
+                                                          fontSize: 17,
+                                                          fontWeight:
+                                                              FontWeight.w700),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                            const SizedBox(
+                                              width: 15,
+                                            ),
+                                            Expanded(
+                                                child: InkWell(
+                                              onTap: () {
+                                                Navigator.pop(context);
+                                              },
+                                              child: Container(
+                                                height: 50,
+                                                decoration: BoxDecoration(
+                                                    color: TColor.color2,
+                                                    borderRadius:
+                                                        const BorderRadius.all(
+                                                            Radius.circular(
+                                                                10))),
+                                                child: Center(
+                                                    child: Text(
+                                                  "Yes thanks!",
+                                                  style: TextStyle(
+                                                      color: TColor.color2Text,
+                                                      fontSize: 17,
+                                                      fontWeight:
+                                                          FontWeight.w700),
+                                                )),
+                                              ),
+                                            ))
+                                          ],
+                                        ),
+                                      ]),
+                                );
+                              });
                           setState(() {
                             selectTab = 2;
                           });
@@ -408,6 +543,142 @@ class _HomeViewState extends State<HomeView> {
                       ),
                       IconButton(
                         onPressed: () {
+                          showModalBottomSheet(
+                              isScrollControlled: true,
+                              backgroundColor: Colors.transparent,
+                              context: context,
+                              builder: (context) {
+                                return Container(
+                                  margin: const EdgeInsets.all(25),
+                                  padding: const EdgeInsets.all(20),
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(25),
+                                  ),
+                                  child: Column(
+                                      mainAxisSize: MainAxisSize.min,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            InkWell(
+                                              onTap: () {
+                                                Navigator.pop(context);
+                                              },
+                                              child: Container(
+                                                width: 50,
+                                                height: 50,
+                                                decoration: const BoxDecoration(
+                                                    color: Color(0xffE2E2E5),
+                                                    borderRadius:
+                                                        BorderRadius.all(
+                                                            Radius.circular(
+                                                                10))),
+                                                child: Icon(
+                                                  Icons.close,
+                                                  color: TColor.primary,
+                                                ),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                        Image.asset(
+                                          'assets/img/ coffee.png',
+                                          fit: BoxFit.fitWidth,
+                                          width: 160,
+                                        ),
+                                        const SizedBox(
+                                          height: 15,
+                                        ),
+                                        Text(
+                                          "Oh, you need\nsome rest!",
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                              color: TColor.primary,
+                                              fontSize: 25,
+                                              fontWeight: FontWeight.w700),
+                                        ),
+                                        const SizedBox(
+                                          height: 15,
+                                        ),
+                                        Text(
+                                          "Coffee machine can make\n a cappuccino especially for you in\n5 minutes. Do you want some coffee?",
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                              color: TColor.primary
+                                                  .withOpacity(0.7),
+                                              fontSize: 14,
+                                              fontWeight: FontWeight.w700),
+                                        ),
+                                        const SizedBox(
+                                          height: 50,
+                                        ),
+                                        Row(
+                                          children: [
+                                            Expanded(
+                                              child: InkWell(
+                                                onTap: () {
+                                                  Navigator.pop(context);
+                                                },
+                                                child: Container(
+                                                  height: 50,
+                                                  decoration: BoxDecoration(
+                                                      border: Border.all(
+                                                          color:
+                                                              TColor.primary),
+                                                      borderRadius:
+                                                          const BorderRadius
+                                                              .all(
+                                                              Radius.circular(
+                                                                  10))),
+                                                  child: Center(
+                                                    child: Text(
+                                                      "No, later",
+                                                      style: TextStyle(
+                                                          color: TColor.primary,
+                                                          fontSize: 17,
+                                                          fontWeight:
+                                                              FontWeight.w700),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                            const SizedBox(
+                                              width: 15,
+                                            ),
+                                            Expanded(
+                                                child: InkWell(
+                                              onTap: () {
+                                                Navigator.pop(context);
+                                              },
+                                              child: Container(
+                                                height: 50,
+                                                decoration: BoxDecoration(
+                                                    color: TColor.color2,
+                                                    borderRadius:
+                                                        const BorderRadius.all(
+                                                            Radius.circular(
+                                                                10))),
+                                                child: Center(
+                                                    child: Text(
+                                                  "Yes thanks!",
+                                                  style: TextStyle(
+                                                      color: TColor.color2Text,
+                                                      fontSize: 17,
+                                                      fontWeight:
+                                                          FontWeight.w700),
+                                                )),
+                                              ),
+                                            ))
+                                          ],
+                                        ),
+                                      ]),
+                                );
+                              });
                           setState(() {
                             selectTab = 3;
                           });
@@ -420,7 +691,286 @@ class _HomeViewState extends State<HomeView> {
                       ),
                       IconButton(
                         onPressed: () {
+                          showModalBottomSheet(
+                              isScrollControlled: true,
+                              backgroundColor: Colors.transparent,
+                              context: context,
+                              builder: (context) {
+                                return Container(
+                                  margin: const EdgeInsets.all(25),
+                                  padding: const EdgeInsets.all(20),
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(25),
+                                  ),
+                                  child: Column(
+                                      mainAxisSize: MainAxisSize.min,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            InkWell(
+                                              onTap: () {
+                                                Navigator.pop(context);
+                                              },
+                                              child: Container(
+                                                width: 50,
+                                                height: 50,
+                                                decoration: const BoxDecoration(
+                                                    color: Color(0xffE2E2E5),
+                                                    borderRadius:
+                                                        BorderRadius.all(
+                                                            Radius.circular(
+                                                                10))),
+                                                child: Icon(
+                                                  Icons.close,
+                                                  color: TColor.primary,
+                                                ),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                        Image.asset(
+                                          'assets/img/ coffee.png',
+                                          fit: BoxFit.fitWidth,
+                                          width: 160,
+                                        ),
+                                        const SizedBox(
+                                          height: 15,
+                                        ),
+                                        Text(
+                                          "Oh, you need\nsome rest!",
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                              color: TColor.primary,
+                                              fontSize: 25,
+                                              fontWeight: FontWeight.w700),
+                                        ),
+                                        const SizedBox(
+                                          height: 15,
+                                        ),
+                                        Text(
+                                          "Coffee machine can make\n a cappuccino especially for you in\n5 minutes. Do you want some coffee?",
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                              color: TColor.primary
+                                                  .withOpacity(0.7),
+                                              fontSize: 14,
+                                              fontWeight: FontWeight.w700),
+                                        ),
+                                        const SizedBox(
+                                          height: 50,
+                                        ),
+                                        Row(
+                                          children: [
+                                            Expanded(
+                                              child: InkWell(
+                                                onTap: () {
+                                                  Navigator.pop(context);
+                                                },
+                                                child: Container(
+                                                  height: 50,
+                                                  decoration: BoxDecoration(
+                                                      border: Border.all(
+                                                          color:
+                                                              TColor.primary),
+                                                      borderRadius:
+                                                          const BorderRadius
+                                                              .all(
+                                                              Radius.circular(
+                                                                  10))),
+                                                  child: Center(
+                                                    child: Text(
+                                                      "No, later",
+                                                      style: TextStyle(
+                                                          color: TColor.primary,
+                                                          fontSize: 17,
+                                                          fontWeight:
+                                                              FontWeight.w700),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                            const SizedBox(
+                                              width: 15,
+                                            ),
+                                            Expanded(
+                                                child: InkWell(
+                                              onTap: () {
+                                                Navigator.pop(context);
+                                              },
+                                              child: Container(
+                                                height: 50,
+                                                decoration: BoxDecoration(
+                                                    color: TColor.color2,
+                                                    borderRadius:
+                                                        const BorderRadius.all(
+                                                            Radius.circular(
+                                                                10))),
+                                                child: Center(
+                                                    child: Text(
+                                                  "Yes thanks!",
+                                                  style: TextStyle(
+                                                      color: TColor.color2Text,
+                                                      fontSize: 17,
+                                                      fontWeight:
+                                                          FontWeight.w700),
+                                                )),
+                                              ),
+                                            ))
+                                          ],
+                                        ),
+                                      ]),
+                                );
+                              });
                           setState(() {
+                            showModalBottomSheet(
+                                isScrollControlled: true,
+                                backgroundColor: Colors.transparent,
+                                context: context,
+                                builder: (context) {
+                                  return Container(
+                                    margin: const EdgeInsets.all(25),
+                                    padding: const EdgeInsets.all(20),
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(25),
+                                    ),
+                                    child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.center,
+                                        children: [
+                                          Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.end,
+                                            children: [
+                                              InkWell(
+                                                onTap: () {
+                                                  Navigator.pop(context);
+                                                },
+                                                child: Container(
+                                                  width: 50,
+                                                  height: 50,
+                                                  decoration:
+                                                      const BoxDecoration(
+                                                          color:
+                                                              Color(0xffE2E2E5),
+                                                          borderRadius:
+                                                              BorderRadius.all(
+                                                                  Radius
+                                                                      .circular(
+                                                                          10))),
+                                                  child: Icon(
+                                                    Icons.close,
+                                                    color: TColor.primary,
+                                                  ),
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                          Image.asset(
+                                            'assets/img/ coffee.png',
+                                            fit: BoxFit.fitWidth,
+                                            width: 160,
+                                          ),
+                                          const SizedBox(
+                                            height: 15,
+                                          ),
+                                          Text(
+                                            "Oh, you need\nsome rest!",
+                                            textAlign: TextAlign.center,
+                                            style: TextStyle(
+                                                color: TColor.primary,
+                                                fontSize: 25,
+                                                fontWeight: FontWeight.w700),
+                                          ),
+                                          const SizedBox(
+                                            height: 15,
+                                          ),
+                                          Text(
+                                            "Coffee machine can make\n a cappuccino especially for you in\n5 minutes. Do you want some coffee?",
+                                            textAlign: TextAlign.center,
+                                            style: TextStyle(
+                                                color: TColor.primary
+                                                    .withOpacity(0.7),
+                                                fontSize: 14,
+                                                fontWeight: FontWeight.w700),
+                                          ),
+                                          const SizedBox(
+                                            height: 50,
+                                          ),
+                                          Row(
+                                            children: [
+                                              Expanded(
+                                                child: InkWell(
+                                                  onTap: () {
+                                                    Navigator.pop(context);
+                                                  },
+                                                  child: Container(
+                                                    height: 50,
+                                                    decoration: BoxDecoration(
+                                                        border: Border.all(
+                                                            color:
+                                                                TColor.primary),
+                                                        borderRadius:
+                                                            const BorderRadius
+                                                                .all(
+                                                                Radius.circular(
+                                                                    10))),
+                                                    child: Center(
+                                                      child: Text(
+                                                        "No, later",
+                                                        style: TextStyle(
+                                                            color:
+                                                                TColor.primary,
+                                                            fontSize: 17,
+                                                            fontWeight:
+                                                                FontWeight
+                                                                    .w700),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                              const SizedBox(
+                                                width: 15,
+                                              ),
+                                              Expanded(
+                                                  child: InkWell(
+                                                onTap: () {
+                                                  Navigator.pop(context);
+                                                },
+                                                child: Container(
+                                                  height: 50,
+                                                  decoration: BoxDecoration(
+                                                      color: TColor.color2,
+                                                      borderRadius:
+                                                          const BorderRadius
+                                                              .all(
+                                                              Radius.circular(
+                                                                  10))),
+                                                  child: Center(
+                                                      child: Text(
+                                                    "Yes thanks!",
+                                                    style: TextStyle(
+                                                        color:
+                                                            TColor.color2Text,
+                                                        fontSize: 17,
+                                                        fontWeight:
+                                                            FontWeight.w700),
+                                                  )),
+                                                ),
+                                              ))
+                                            ],
+                                          ),
+                                        ]),
+                                  );
+                                });
                             selectTab = 4;
                           });
                         },
