@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:work_schedule/common/color_extenstion.dart';
 
+import '../../common/color_extenstion.dart';
 import '../../common_widget/task_row.dart';
 import '../../common_widget/top_progress_row.dart';
 
@@ -128,8 +128,8 @@ class _HomeViewState extends State<HomeView> {
                           ),
                         ),
                         CircleAvatar(
-                          child: Image.asset('assets/img/1.png'),
                           radius: 33,
+                          child: Image.asset('assets/img/1.png'),
                         )
                       ],
                     ),
@@ -240,7 +240,6 @@ class _HomeViewState extends State<HomeView> {
                           });
 
                           showModalBottomSheet(
-                              
                               isScrollControlled: true,
                               backgroundColor: Colors.transparent,
                               context: context,
@@ -316,34 +315,38 @@ class _HomeViewState extends State<HomeView> {
                                         Row(
                                           children: [
                                             Expanded(
-                                                child: InkWell(
-                                              onTap: () {
-                                                Navigator.pop(context);
-                                              },
-                                              child: Container(
-                                                height: 50,
-                                                decoration: BoxDecoration(
-                                                    border: Border.all(
-                                                        color: TColor.primary),
-                                                    borderRadius:
-                                                        const BorderRadius.all(
-                                                            Radius.circular(
-                                                                10))),
-                                                child: Center(
+                                              child: InkWell(
+                                                onTap: () {
+                                                  Navigator.pop(context);
+                                                },
+                                                child: Container(
+                                                  height: 50,
+                                                  decoration: BoxDecoration(
+                                                      border: Border.all(
+                                                          color:
+                                                              TColor.primary),
+                                                      borderRadius:
+                                                          const BorderRadius
+                                                              .all(
+                                                              Radius.circular(
+                                                                  10))),
+                                                  child: Center(
                                                     child: Text(
-                                                  "No, later",
-                                                  style: TextStyle(
-                                                      color: TColor.primary,
-                                                      fontSize: 17,
-                                                      fontWeight:
-                                                          FontWeight.w700),
-                                                ),),
+                                                      "No, later",
+                                                      style: TextStyle(
+                                                          color: TColor.primary,
+                                                          fontSize: 17,
+                                                          fontWeight:
+                                                              FontWeight.w700),
+                                                    ),
+                                                  ),
+                                                ),
                                               ),
-                                            ),),
-
-                                            const SizedBox(width: 15,),
-
-                                             Expanded(
+                                            ),
+                                            const SizedBox(
+                                              width: 15,
+                                            ),
+                                            Expanded(
                                                 child: InkWell(
                                               onTap: () {
                                                 Navigator.pop(context);

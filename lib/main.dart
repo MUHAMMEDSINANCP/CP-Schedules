@@ -1,7 +1,8 @@
+import 'package:cp_schedules/view/home/home_view.dart';
 import 'package:flutter/material.dart';
-import 'package:work_schedule/common/color_extenstion.dart';
-import 'package:work_schedule/view/home/home_view.dart';
 
+import 'common/color_extenstion.dart';
+  
 void main() {
   runApp(const MyApp());
 }

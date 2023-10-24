@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_face_pile/flutter_face_pile.dart';
-import 'package:work_schedule/common/color_extenstion.dart';
 
+import '../common/color_extenstion.dart';
+ 
 class TaskRow extends StatelessWidget {
   final Map tObj;
   final int index;
