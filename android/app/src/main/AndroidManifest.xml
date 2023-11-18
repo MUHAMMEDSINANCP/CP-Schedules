@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="CP_Schedules"
+        android:label="CP Schedules"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
