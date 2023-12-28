@@ -2,19 +2,19 @@
 
 CP Schedules is an MVP Scheduling app where users efficiently manage their schedules. The app also reminds users to take breaks when they exceed the screen time limit. Built with clean code, clean architecture, and Flutter state management.
 
-### Key Features:
+### Key Features :
 
-Schedule Management: Efficiently organize daily schedules.
+Schedule Management : Efficiently organize daily schedules.
 
-Break Reminders: Receive alerts for screen time limit exceedance.
+Break Reminders : Receive alerts for screen time limit exceedance.
 
-MVP Stage: Initial version focusing on core scheduling and reminders.
+MVP Stage : Initial version focusing on core scheduling and reminders.
 
-Future Expansion: Potential for further feature enhancements.
+Future Expansion : Potential for further feature enhancements.
 
-### Usage:
+### Usage :
 
 CP Schedules serves as a basic scheduling tool, aiding users in time management and encouraging breaks during extended screen usage.
 
-### Feedback:
-For any suggestions or feedback, please contact us at cpmuhammedsinan@gmail.com. Your inputs are valuable for enhancing CP Schedules.
+### Feedback :
+For any suggestions or feedback, please connect me at cpmuhammedsinan@gmail.com. Your inputs are valuable for enhancing CP Schedules.
