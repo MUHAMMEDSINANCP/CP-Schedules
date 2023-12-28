@@ -1,16 +1,20 @@
-# work_schedule
+## CP Schedules
 
-A new Flutter project.
+CP Schedules is an MVP Scheduling app where users efficiently manage their schedules. The app also reminds users to take breaks when they exceed the screen time limit. Built with clean code, clean architecture, and Flutter state management.
 
-## Getting Started
+### Key Features:
 
-This project is a starting point for a Flutter application.
+Schedule Management: Efficiently organize daily schedules.
 
-A few resources to get you started if this is your first Flutter project:
+Break Reminders: Receive alerts for screen time limit exceedance.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+MVP Stage: Initial version focusing on core scheduling and reminders.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Future Expansion: Potential for further feature enhancements.
+
+### Usage:
+
+CP Schedules serves as a basic scheduling tool, aiding users in time management and encouraging breaks during extended screen usage.
+
+### Feedback:
+For any suggestions or feedback, please contact us at cpmuhammedsinan@gmail.com. Your inputs are valuable for enhancing CP Schedules.
