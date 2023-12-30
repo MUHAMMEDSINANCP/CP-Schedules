@@ -18,3 +18,4 @@ CP Schedules serves as a basic scheduling tool, aiding users in time management 
 
 ### Feedback :
 For any suggestions or feedback, please connect me at cpmuhammedsinan@gmail.com. Your inputs are valuable for enhancing CP Schedules.
+ 
